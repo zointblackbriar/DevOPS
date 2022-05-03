@@ -78,12 +78,14 @@ docker build -f Dockerfile.dev .
 ```
 
 Run the application
+
 ```bash
 docker run -p [portinlocal][portindocker][hashvalue]
 docker run -p 3000:3000 sha256:8844b994cf5d9265f5af9228a13e87c27782bcc241daaaf26aca51f97d9e252c
 ```
 
 Reference mapped running application (Docker Volume)
+
 ```bash
 docker run -p 3000:3000 -v $(pwd):/app 
 sha256:8844b994cf5d9265f5af9228a13e87c27782bcc241daaaf26aca51f97d9e252c
